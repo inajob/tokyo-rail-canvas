@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tokyo Rail Canvas</title>
+<meta charset="UTF-8">
+<title>draw sta</title>
+<style>
+body{background-color:black;color:white;}
+canvas{
+background-color:black;
+}
+.lfloat{float:left;}
+.clbr{clear:both;}
+a{color:#ddf;}
+a:hover{color:#336;background-color:white;}
+</style>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/sta.js"></script>
+</head>
+<body>
+<h1>Tokyo Rail Canvas</h1>
+<p>
+created by <a href="http://twitter.com/ina_ani">@ina_ani</a><br>
+powered by <a href="http://express.heartrails.com/api.html">HeartRails Express</a><br>
+</p>
+
+<div id="favs">
+</div>
+	  <div class="lfloat lpad">
+	    <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+	  </div>
+	  <div id="tweet" class="lfloat lpad">
+	    <a href="https://twitter.com/share" class="twitter-share-button" data-url="" data-count="none">Tweet</a>
+	    <script>!function(d,s,id){var s,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	  </div>
+	  <div class="lfloat lpad">
+	    <div class="fb-like" data-send="false" data-width="120" data-show-faces="true" data-colorscheme="dark" data-font="arial"></div>
+	  </div>
+	  <br class="clbr">
+
+<div>
+  <canvas id="canv" width="1000" height="1000"></canvas>
+</div>
+
+<div>
+</div>
+</body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</html>
